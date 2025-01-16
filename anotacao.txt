@@ -1,0 +1,13 @@
+Primeiro passa:
+Criar a image e subir para docker hub:
+docker build -t erivandoeey/fake-shop:v1 --push .
+
+k3d cluster create meucluster --servers 1 --agents 2 -p "8080:5000@loadbalancer"
+
+Para o banco:
+kubectl apply -f k8s/deployment.yaml
+Para a aplicação e só rodar depois da configuração da aplicação:
+kubectl apply -f k8s/deployment.yaml
+kubectl get pod
+
+
