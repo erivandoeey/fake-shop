@@ -164,5 +164,4 @@ cython_debug/
 *.Identifier
 
 #TXT
-anotacao.txt
-../as.txt
+../anotacao.txt
